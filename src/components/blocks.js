@@ -10,7 +10,7 @@ const generateBlocks = ({blocks}) => {
                 <Reveal key={item.id} effect='animated fadeInUp' className={`item ${item.type}`} >
                 <div className='veil'></div>
                 <div className='image'>
-                <span style={{background:`url(\'/images/blocks/${encodeURIComponent(item.image).replace("'","\\")}.jpg\') no-repeat`}}></span>
+                <span style={{background:`url('/images/blocks/${encodeURIComponent(item.image)}.jpg') no-repeat`}}></span>
                 </div>
                 <div className='title'>
                     <Link to={item.link}>{item.title}</Link>
